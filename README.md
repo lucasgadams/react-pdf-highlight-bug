@@ -1,0 +1,8 @@
+- This repros the highlighting issue. When selecting text the last line is not contained in the selectedText prop. This happens on every pdf.
+- The issue goes away when turning off react strict mode in `next.config.mjs`. I tried many other things and could not find anything else that fixed the issue.
+- This project uses:
+  - node v18.3.0
+  - nextjs v12.3.2
+  - react-pdf-viewer@3.7.0
+  - typescript@4.7.4
+  - pdfjs-dist@2.16.105
